@@ -1,0 +1,42 @@
+{
+  "name": "pi-little-subagents",
+  "version": "0.1.0",
+  "description": "Lean, read-only subagents for the Pi coding agent, built for small local models: keep your main context small by delegating exploration, web research and review.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "subagents",
+    "local-llm",
+    "small-models",
+    "context-window"
+  ],
+  "license": "MIT",
+  "author": "JonyPlo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonyPlo/pi-little-agents.git"
+  },
+  "homepage": "https://github.com/JonyPlo/pi-little-agents#readme",
+  "bugs": {
+    "url": "https://github.com/JonyPlo/pi-little-agents/issues"
+  },
+  "files": [
+    "extensions",
+    "agents",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/subagent.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}

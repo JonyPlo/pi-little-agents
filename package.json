@@ -38,5 +38,8 @@
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "typebox": "*"
+  },
+  "scripts": {
+    "release": "npm version patch && git push --follow-tags && npm publish"
   }
 }
